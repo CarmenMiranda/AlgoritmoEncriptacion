@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Encriptación</title>
+  </head>
+  <body>
+    <div class="container-fluid main">
+        <h2 class="main-title text-center p-md-3 p-0 bg-dark text-white"><i class="fas fa-bezier-curve"></i> Algoritmo de Encriptación <i class="far fa-keyboard"></i></h2>
+        <div class="row main-row">
+            <div class="col-md-6 col-12 bg-primary d-flex flex-column flex-wrap">
+                <h3 class="text-center my-md-3 w-100">Encriptar <i class="fas fa-lock"></i></h3>
+                <p class="text-center">Escriba su mensaje a encriptar</p>
+                <textarea name="mensaje-encriptar" id="mensaje-encriptar" cols="10" rows="8" class="w-75 mx-auto"></textarea>
+                <p class="text-center mt-3">Mensaje encriptado</p>
+                <textarea name="traduccion-encriptada" id="trad-encriptada" cols="30" rows="8" class="w-75 mx-auto" readonly></textarea>
+
+                <button class="btn btn-outline-light w-50 mt-5 mb-2 mx-auto py-2" onclick="encriptar()">Encriptar ahora</button>
+            </div>
+            <div class="col-md-6 col-12 bg-success d-flex flex-column flex-wrap">
+                <h3 class="text-center my-md-3 w-100">Desencriptar <i class="fas fa-key"></i></h3>
+                <p class="text-center">Escriba su mensaje a desencriptar</p>
+                <textarea name="mensaje-desencriptar" id="mensaje-desencriptar" cols="10" rows="8" class="w-75 mx-auto"></textarea>
+                <p class="text-center mt-3">Mensaje desencriptado</p>
+                <textarea name="traduccion-desencriptada" id="trad-desencriptada" cols="30" rows="8" class="w-75 mx-auto" readonly></textarea>
+
+                <button class="btn btn-dark w-50 mt-5 mb-2 mx-auto py-2" onclick="desencriptar()">Desencriptar ahora</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
